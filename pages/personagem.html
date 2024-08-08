@@ -17,16 +17,16 @@
     <form id="formularioPersonagem">
         <div class="mb-3">
           <label for="nameInputChar" class="form-label">Nome do personagem</label>
-          <input type="text" class="form-control" id="nameInputChar" placeholder="Digite aqui o nome">
+          <input type="text" class="form-control" id="nameInputChar" placeholder="Digite aqui o nome" required>
         </div>
         <div class="mb-3">
           <label for="ageInputChar" class="form-label">Idade</label>
-          <input type="number" class="form-control" id="ageInputChar" placeholder="Digite a idade">
+          <input type="number" class="form-control" id="ageInputChar" placeholder="Digite a idade" required>
         </div>
         <div class="mb-3">
             <label for="raceInputChar" class="form-label">Raça</label>
-            <select name="raca" id="raceInputChar" aria-label="Default select example">
-                <option selected>-----</option>
+            <select name="raca" id="raceInputChar" aria-label="Default select example" required>
+                <option selected disabled>-----</option>
                 <option value="human">Humano</option>
                 <option value="elf">Elfo</option>
                 <option value="dwarf">Anão</option>
@@ -35,8 +35,8 @@
         </div>
         <div class="mb-3">
             <label for="classInputChar" class="form-label">Classe</label>
-            <select name="class" id="classInputChar" aria-label="Default select example">
-                <option selected>-----</option>
+            <select name="class" id="classInputChar" aria-label="Default select example" required>
+                <option selected disabled>-----</option>
                 <option value="mage">Mago</option>
                 <option value="barbarian">Bárbaro</option>
                 <option value="cleric">Clérigo</option>
