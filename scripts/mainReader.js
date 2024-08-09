@@ -16,7 +16,10 @@ function displayCharacters(characters) {
 
     characters.forEach(character => {
         const charElement = document.createElement('div');
-        const editButton = document.createElement('button')
+        const editButton = document.createElement('button');
+        editButton.innerText = "Editar";
+        editButton.classList.add("btn")
+        editButton.classList.add("editButton")
 
         editButton.onclick = () => {
             const name = prompt("Digite o nome: ");
@@ -60,7 +63,10 @@ function displayPets(pets) {
             <p>Raça: ${pet.race}</p>
             <p>Idade: ${pet.age}</p>
         `;
-        const editButton = document.createElement('button')
+        const editButton = document.createElement('button');
+        editButton.innerText = "Editar";
+        editButton.classList.add("btn")
+        editButton.classList.add("editButton")
 
         editButton.onclick = () => {
             const name = prompt("Digite o nome: ");
@@ -73,6 +79,7 @@ function displayPets(pets) {
             pet.age = age;
             pet.race = race;
             localStorage.setItem("pets", JSON.stringify(pets))
+            displayPets(pets)
         }
 
         petContainer.appendChild(petElement);

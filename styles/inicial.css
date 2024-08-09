@@ -1,5 +1,40 @@
 body{
-    background: url("/imgs/background.jpg");
+    background: url("../imgs/Firefly_Paisagem.jpg");
+    color: white;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.coluna{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.texto{
+
+    width: 66%;
+    font-size: 20px;
+    text-align: justify;
+    text-align: left;
+    background: transparent;
+    border: 2px solid #9b9b9b;
+    color: white;
+    margin: auto;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+}
+
+.imagem{
+    width: 33%;
+    text-align: left;
+    padding: 60px;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
 }
 
 
